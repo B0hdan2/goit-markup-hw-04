@@ -50,7 +50,7 @@ ul {
 }
 
 .hidden-header{
-  opacity: 0;
+  height: 0;
 }
 /*-------------------HEADER------------------------ */
 
@@ -164,7 +164,7 @@ align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
   
-
+fill: var(--primary-text-color);
   color: var(--primary-text-color);
 
   text-decoration: none;
@@ -179,6 +179,8 @@ align-items: center;
   padding-bottom: 32px;
 
   color: var(--primary-text-color);
+
+  fill: var(--primary-text-color);
 
   text-decoration: none;
   font-weight: 500;
@@ -373,12 +375,11 @@ border-radius: 4px;
   align-items: center;
   width: 44px;
   height: 44px;
-  background-color: #fff;
   border-radius: 50%;
 }
 
 .social-team{
-  fill: var(--primary-text-color);
+  fill: #AFB1B8;
 }
 .social-my:hover,
 .social-my:focus,
@@ -586,7 +587,7 @@ padding-bottom: 20px;
 }
 .title-join{
   align-items: baseline;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 
   font-family: 'Roboto';
 font-weight: 700;

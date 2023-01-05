@@ -23,7 +23,7 @@
 
         <ul class="header-nav list">
           <li class="item">
-            <a class="header-nav linc-current" href="./index.html">Студія</a>
+              <a class="header-nav linc-current" href="./index.html">Студія </a>
           </li>
           <li class="item">
             <a class="header-nav linc" href="./portfolio.html">Портфоліо</a>
@@ -61,8 +61,23 @@
       <div class="section hero">
 
         <h1 class="section-hero title">Ефективні рішення для вашого бізнесу</h1>
-        <button class="section-hero button" type="button"> Замовити послугу</button>
-  
+        <button class="section-hero button" type="button" data-modal-open > Замовити послугу</button>
+        
+        
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+
+           <div class="entrance">
+            <button class="div-entrance" data-modal-close>
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="none">
+                <path fill="#000" d="M11 1.108 9.892 0 5.5 4.392 1.108 0 0 1.108 4.392 5.5 0 9.892 1.108 11 5.5 6.608 9.892 11 11 9.892 6.608 5.5 11 1.108Z"/>
+              </svg>
+            </button>
+           </div>
+
+          </div>
+        </div>
+
     </div>
   </section>
 
@@ -109,14 +124,25 @@
         <h2 class="section-work title">Чим ми займаємося</h2>
         <ul class="section-work list">
           <li class="section-work linc">
-            <img src="./images/work/box1.jpg" alt="програмування" width="370" height="300" />
+
+           <div class="thumb-work">
+            <img src="./images/work/box1.jpg" alt="десктопні додатки" width="370" height="300" />
+            <p class="section-work text">десктопні додатки</p>
+           </div>
+
           </li>
           <li class="section-work linc">
-            <img src="./images/work/box2.jpg" alt="дизайн" width="370" height="300" />
+            <div class="thumb-work">
+              <img src="./images/work/box2.jpg" alt="мобільні додатки" width="370" height="300" />
+              <p class="section-work text">мобільні додатки</p>
+            </div>
           </li>
 
           <li class="section-work linc">
-            <img src="./images/work/box3.jpg" alt="колорування" width="370" height="300" />
+            <div class="thumb-work">
+              <img src="./images/work/box3.jpg" alt="дизайнерські рішення" width="370" height="300" />
+              <p class="section-work text">дизайнерські рішення</p>
+            </div>
           </li>
         </ul>
       </div>
@@ -438,6 +464,8 @@
 
      </div>
   </footer>
+  
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
